@@ -172,11 +172,11 @@
           <span>숨돌방지</span><span id="status-a" class="muted">대기</span>
         </div>
         <div class="rows" style="margin-bottom:8px;">
-          <div class="label" id="label-a">남은 시간: 7.50s</div>
-          <div class="label" id="interval-a-view">간격: 7.5s</div>
+          <div class="label" id="label-a">남은 시간: 10.00s</div>
+          <div class="label" id="interval-a-view">간격: 10.0s</div>
         </div>
         <div class="rows">
-          <div class="row"><label class="label" for="interval-a">간격(초)</label><input id="interval-a" type="number" min="0.1" step="0.1" value="7.5" /></div>
+          <div class="row"><label class="label" for="interval-a">간격(초)</label><input id="interval-a" type="number" min="0.1" step="0.1" value="10.0" /></div>
           <div class="row"><label class="label" for="freq-a">주파수(Hz)</label><input id="freq-a" type="number" min="1" step="1" value="3000" /></div>
           <div class="row"><label class="label" for="dur-a">울림(초)</label><input id="dur-a" type="number" min="0.05" step="0.05" value="0.3" /></div>
           <div class="row">
@@ -198,11 +198,11 @@
           <span>에르다 파운틴</span><span id="status-b" class="muted">대기</span>
         </div>
         <div class="rows" style="margin-bottom:8px;">
-          <div class="label" id="label-b">남은 시간: 56.00s</div>
-          <div class="label" id="interval-b-view">간격: 56.0s</div>
+          <div class="label" id="label-b">남은 시간: 60.00s</div>
+          <div class="label" id="interval-b-view">간격: 60.0s</div>
         </div>
         <div class="rows">
-          <div class="row"><label class="label" for="interval-b">간격(초)</label><input id="interval-b" type="number" min="0.1" step="0.1" value="56.0" /></div>
+          <div class="row"><label class="label" for="interval-b">간격(초)</label><input id="interval-b" type="number" min="0.1" step="0.1" value="60.0" /></div>
           <div class="row"><label class="label" for="freq-b">주파수(Hz)</label><input id="freq-b" type="number" min="1" step="1" value="600" /></div>
           <div class="row"><label class="label" for="dur-b">울림(초)</label><input id="dur-b" type="number" min="0.05" step="0.05" value="5.0" /></div>
           <div class="row">
@@ -230,11 +230,11 @@
   <div id="compact-timers" class="compact-timers">
     <div id="compact-timer-a" class="compact-timer">
       <span class="compact-timer-name">숨돌방지:</span>
-      <span id="compact-time-a" class="compact-timer-time">7.50s</span>
+      <span id="compact-time-a" class="compact-timer-time">10.00s</span>
     </div>
     <div id="compact-timer-b" class="compact-timer">
       <span class="compact-timer-name">에르다 파운틴:</span>
-      <span id="compact-time-b" class="compact-timer-time">56.00s</span>
+      <span id="compact-time-b" class="compact-timer-time">60.00s</span>
     </div>
   </div>
 
@@ -261,8 +261,8 @@
         this.compactTimersContainer = document.getElementById('compact-timers');
   this.themeToggle = document.getElementById('toggle-theme');
 
-        this.initTimer('a', { interval: 7500, freq: 1000, dur: 0.3, name: '숨돌방지' });
-        this.initTimer('b', { interval: 56000, freq: 600, dur: 0.5, name: '에르다 파운틴' });
+        this.initTimer('a', { interval: 10000, freq: 1000, dur: 0.3, name: '숨돌방지' });
+        this.initTimer('b', { interval: 60000, freq: 600, dur: 0.5, name: '에르다 파운틴' });
         
         this.bindGlobalEvents();
         this.initAudioContext();
